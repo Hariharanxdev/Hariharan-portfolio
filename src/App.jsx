@@ -12,7 +12,7 @@ const Home = lazy(() => import("./pages/Home"));
 const Portfolio = lazy(() => import("./pages/Portfolio"));
 const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
 const About = lazy(() => import("./pages/About"));
-const Certificates = lazy(() => import("./pages/Certificates"));
+
 const Contact = lazy(() => import("./pages/Contact"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const ErrorBoundary = lazy(() => import("@/components/ErrorBoundary").then(m => ({ default: m.ErrorBoundary })));
