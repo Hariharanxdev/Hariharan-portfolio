@@ -46,10 +46,10 @@ export interface Skill {
   color?: string;
 }
 
-import image1 from '../assets/image1.PNG';
-import image2 from '../assets/image2.jpg';
-import image3 from '../assets/image3.jpg';
-import image4 from '../assets/image4.jpg';
+import image1 from '../assets/image1.PNG?url';
+import image2 from '../assets/image2.jpg?url';
+import image3 from '../assets/image3.jpg?url';
+import image4 from '../assets/image4.jpg?url';
 
 export const developerInfo: DeveloperInfo = {
   name: 'HariHaran E',
