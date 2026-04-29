@@ -1,0 +1,148 @@
+import { motion } from 'framer-motion';
+import { Code, Heart, Languages } from 'lucide-react';
+import { skills } from '@/data/developer';
+import { ScrollReveal } from '@/components/ui/ScrollReveal';
+
+/**
+ * Skills section with animated progress bars and categories
+ */
+export function SkillsSection() {
+  const technicalSkills = skills.filter(s => s.category === 'technical');
+  const softSkills = skills.filter(s => s.category === 'soft');
+  const languages = skills.filter(s => s.category === 'language');
+
+  return (
+    <section className="py-24 md:py-32 px-6 relative overflow-hidden" id="skills">
+      {/* Background decorations */}
+      <div className="absolute top-1/4 right-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-tertiary/5 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-6xl mx-auto">
+        <ScrollReveal>
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold">
+              <span className="text-gradient-primary">Skills & Expertise</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Technologies and abilities I've developed through projects and continuous learning
+            </p>
+          </div>
+        </ScrollReveal>
+
+        <div className="grid gap-12 lg:gap-16">
+          {/* Technical Skills */}
+          <ScrollReveal>
+            <div className="space-y-8">
+              <div className="flex items-center gap-3">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <Code className="size-5 text-primary" />
+                </div>
+                <h3 className="text-2xl font-semibold">Technical Skills</h3>
+              </div>
+              
+              <div className="grid gap-6 md:grid-cols-2">
+                {technicalSkills.map((skill, index) => (
+                  <motion.div
+                    key={skill.name}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.05 }}
+                    className="space-y-2"
+                  >
+                    <div className="flex justify-between items-center">
+                      <span className="font-medium text-foreground">{skill.name}</span>
+                      <span className="text-sm text-muted-foreground">{skill.level}%</span>
+
+                    </div>
+                    <div className="h-3 rounded-full bg-muted/50 overflow-hidden relative">
+                      <motion.div
+                        className="h-full rounded-full bg-gradient-primary relative overflow-hidden"
+                        initial={{ width: 0 }}
+                        whileInView={{ width: `${skill.level}%` }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1, delay: 0.2 + index * 0.05, ease: "easeOut" }}
+                      >
+                        {/* Animated shimmer effect */}
+                        <motion.div
+                          className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
+                          initial={{ x: '-100%' }}
+                          animate={{ x: '100%' }}
+                          transition={{
+                            duration: 2,
+                            repeat: Infinity,
+                            repeatDelay: 3,
+                            ease: "easeInOut"
+                          }}
+                        />
+                      </motion.div>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </ScrollReveal>
+
+          {/* Soft Skills & Languages */}
+          <div className="grid md:grid-cols-2 gap-12">
+            {/* Soft Skills */}
+            <ScrollReveal delay={0.2}>
+              <div className="space-y-6">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-tertiary/10">
+                    <Heart className="size-5 text-tertiary" />
+                  </div>
+                  <h3 className="text-2xl font-semibold">Soft Skills</h3>
+                </div>
+                
+                <div className="flex flex-wrap gap-3">
+                  {softSkills.map((skill, index) => (
+                    <motion.span
+                      key={skill.name}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.3, delay: index * 0.05 }}
+                      whileHover={{ scale: 1.05 }}
+                      className="px-4 py-2 rounded-full bg-gradient-card border border-border/50 hover:border-tertiary/30 text-foreground text-sm font-medium transition-colors cursor-default"
+                    >
+                      {skill.name}
+                    </motion.span>
+                  ))}
+                </div>
+              </div>
+            </ScrollReveal>
+
+            {/* Languages */}
+            <ScrollReveal delay={0.3}>
+              <div className="space-y-6">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-secondary/10">
+                    <Languages className="size-5 text-secondary" />
+                  </div>
+                  <h3 className="text-2xl font-semibold">Languages</h3>
+                </div>
+                
+                <div className="flex flex-wrap gap-3">
+                  {languages.map((language, index) => (
+                    <motion.span
+                      key={language.name}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.3, delay: index * 0.1 }}
+                      whileHover={{ scale: 1.05 }}
+                      className="px-5 py-3 rounded-xl bg-gradient-card border border-border/50 hover:border-secondary/30 text-foreground font-medium transition-colors cursor-default"
+                    >
+                      {language.name}
+                    </motion.span>
+                  ))}
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
