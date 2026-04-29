@@ -1,0 +1,9 @@
+declare module '*.png';
+declare module '*.jpg';
+declare module '*.jpeg';
+declare module '*.webp';
+declare module '*.svg';
+declare module '*.PNG';
+declare module '*.JPG';
+declare module '*.JPEG';
+declare module '*.WEBP';

@@ -46,6 +46,11 @@ export interface Skill {
   color?: string;
 }
 
+import image1 from '../assets/image1.PNG';
+import image2 from '../assets/image2.jpg';
+import image3 from '../assets/image3.jpg';
+import image4 from '../assets/image4.jpg';
+
 export const developerInfo: DeveloperInfo = {
   name: 'HariHaran E',
   title: 'Full-Stack Developer | Software Developer ',
@@ -98,7 +103,7 @@ export const projects: Project[] = [
       'Notifications and status updates for donors and NGOs on donation progress'
     ],
     category: 'web',
-    coverImage: '/src/assets/image1.PNG',
+    coverImage: image1,
     sourceCode: 'https://github.com/Hariharanxdev/NGO-Project.git'
   },
   {
@@ -117,7 +122,7 @@ export const projects: Project[] = [
     ],
     //impact: 'Go Project',
     category: 'ai',
-    coverImage: '/src/assets/image2.jpg',
+    coverImage: image2,
     //year: '',
     sourceCode: 'https://github.com/Hariharanxdev/ONDC-EASY-SHOP.git'
   },
@@ -136,7 +141,7 @@ export const projects: Project[] = [
       'Dynamic data fetching using APIs'
     ],
     category: 'web',
-    coverImage: '/src/assets/image3.jpg',
+    coverImage: image3,
     //year: '',
     sourceCode: 'https://github.com/Hariharanxdev/NETFLIX-Clone.git'
   },
@@ -155,7 +160,7 @@ export const projects: Project[] = [
       'Integrated database for efficient data handling'
     ],
     category: 'web',
-    coverImage: '/src/assets/image4.jpg',
+    coverImage: image4,
     //year: '',
     sourceCode: 'https://github.com/Hariharanxdev/Course-Registration-System.git'
   }
