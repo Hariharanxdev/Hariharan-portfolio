@@ -319,15 +319,6 @@
     animation: float 6s ease-in-out infinite;
   }
 
-  img {
-    display: none !important;
-    visibility: hidden !important;
-  }
-
-  [style*="background-image"] {
-    background-image: none !important;
-  }
-
   .animate-pulse-glow {
     animation: pulse-glow 2s ease-in-out infinite;
   }
