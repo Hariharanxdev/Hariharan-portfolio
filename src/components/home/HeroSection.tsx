@@ -94,8 +94,9 @@ export function HeroSection() {
             size="lg"
             className="bg-gradient-primary hover:opacity-90 text-primary-foreground font-medium px-8 shadow-glow-primary transition-all duration-300"
           >
-            <Link to="/portfolio">View My Projects</Link>
+            <Link to="/contact">Hire Me</Link>
           </Button>
+          
           <Button
             asChild
             size="lg"
@@ -108,12 +109,17 @@ export function HeroSection() {
             </a>
           </Button>
           <Button
+            //asChild
+            //size="lg"
+            //className="bg-gradient-primary hover:opacity-90 text-primary-foreground font-medium px-8 shadow-glow-primary transition-all duration-300"
             asChild
             size="lg"
-            className="bg-gradient-primary hover:opacity-90 text-primary-foreground font-medium px-8 shadow-glow-primary transition-all duration-300"
+            variant="outline"
+            className="border-primary/30 hover:bg-primary/10 font-medium px-8 group/resume"
           >
-            <Link to="/contact">Hire Me</Link>
+            <Link to="/portfolio">View My Projects</Link>
           </Button>
+          
         </motion.div>
 
         {/* Social Links */}
