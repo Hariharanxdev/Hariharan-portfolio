@@ -56,9 +56,9 @@ export const developerInfo: DeveloperInfo = {
   title: 'Full-Stack Developer | Software Developer ',
   tagline: 'Building scalable solutions with modern technologies',
   heroIntroduction: 'Passionate about building innovative web applications and AI solutions that solve real-world problems. Specializing in full-stack development, and integrating AI/ML for smarter user experiences.',
-  biography: `I am an Information Technology graduate with a strong interest in Fullstack Development,Backend Development and Artificial Intelligence. I enjoy solving real-world problems using technology and continuously improving my skills through hands-on projects and learning.
+  biography: `I am an Information Technology graduate with a strong interest in Fullstack Development, Backend Development and Artificial Intelligence. I enjoy solving real-world problems using technology and continuously improving my skills through hands-on projects and learning.
 
-I have experience working with Python, SQL, ReactJS, Django, and I am currently focused on building practical, impactful projects—especially in AI-based applications. I am motivated, detail-oriented, and eager to contribute to innovative teams while growing as a software professional.`,
+I have experience working with Python, SQL, ReactJS, Django and I am currently focused on building practical, impactful projects—especially in AI-based applications. I am motivated, detail-oriented, and eager to contribute to innovative teams while growing as a software professional.`,
   email: 'hariharanelumalai03@gmail.com',
   phone: '6369579892',
   location: 'Villupuram, Tamil Nadu',

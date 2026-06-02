@@ -107,6 +107,13 @@ export function HeroSection() {
               Download Resume
             </a>
           </Button>
+          <Button
+            asChild
+            size="lg"
+            className="bg-gradient-primary hover:opacity-90 text-primary-foreground font-medium px-8 shadow-glow-primary transition-all duration-300"
+          >
+            <Link to="/contact">Hire Me</Link>
+          </Button>
         </motion.div>
 
         {/* Social Links */}
