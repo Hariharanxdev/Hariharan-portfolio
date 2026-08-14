@@ -31,7 +31,7 @@ export interface Project {
   techStack: string[];
   features: string[];
   impact?: string;
-  category: 'app' | 'ai' | 'web';
+  category: 'app' | 'ai' | 'web' | 'Full Stack Web Application' | 'Fullstack web application';
   coverImage: string;
   //year: string;
   sourceCode?: string;
@@ -49,7 +49,8 @@ export interface Skill {
 import image1 from '../assets/image1.PNG?url';
 import image2 from '../assets/image2.jpg?url';
 import image3 from '../assets/image3.jpg?url';
-import image4 from '../assets/image4.jpg?url';
+import image4 from '../assets/image4.png?url';
+import image5 from '../assets/image5.jpg?url';
 
 export const developerInfo: DeveloperInfo = {
   name: 'HariHaran E',
@@ -147,6 +148,28 @@ export const projects: Project[] = [
   },
   {
     id: '4',
+    title: 'Subscription Management And Billing System',
+    slug: 'Billing-Platform',
+    description: 'A subscription platform for secure, automated billing, payments, and invoices.',
+    longDescription: 'A subscription management platform for secure and automated billing, payments, and invoice management. It provides customer and admin dashboards with subscription tracking and notifications. The platform also supports customer profile management and scalable backend services for automated billing workflows.',
+    techStack: ['ReactJS','Python','Fast API','PostgreSQL','Redis','REST API'],
+    features: [
+      'Secure customer authentication',
+      'Subscription management and tracking',
+      'Automated billing and payment management',
+      'Invoice generation and management',
+      'Customer and admin dashboards',
+      'Customer profile management',
+      'Notification and email integration',
+      'RESTful API integration with FastAPI'
+    ],
+    category: 'Fullstack web application',
+    coverImage: image4,
+    //year: '',
+    sourceCode: 'https://github.com/Hariharanxdev/Subscription-Management-And-Billing-platform.git'
+  },
+  {
+    id: '5',
     title: 'Course Registration System',
     slug: 'course-registration-system',
     description: 'A system for managing course registrations and enrollments',
@@ -160,7 +183,7 @@ export const projects: Project[] = [
       'Integrated database for efficient data handling'
     ],
     category: 'web',
-    coverImage: image4,
+    coverImage: image5,
     //year: '',
     sourceCode: 'https://github.com/Hariharanxdev/Course-Registration-System.git'
   }

@@ -198,7 +198,7 @@ export default function Contact() {
                         <Textarea
                           id="message"
                           name="message"
-                          placeholder="Tell me about your project..."
+                          placeholder="Text here..."
                           rows={5}
                           required
                           className="bg-muted/30 border-border/50 focus:border-primary resize-none"

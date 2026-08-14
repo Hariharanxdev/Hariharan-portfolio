@@ -17,6 +17,8 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
     app: 'from-primary to-secondary',
     ai: 'from-secondary to-tertiary',
     web: 'from-accent to-primary',
+    'Full Stack Web Application': 'from-accent to-primary',
+    'Fullstack web application': 'from-accent to-primary'
   };
 
   return (
