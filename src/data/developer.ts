@@ -48,9 +48,11 @@ export interface Skill {
 
 import image1 from '../assets/image1.PNG?url';
 import image2 from '../assets/image2.jpg?url';
-import image3 from '../assets/image3.jpg?url';
+import image3 from '../assets/image3.png?url';
 import image4 from '../assets/image4.png?url';
 import image5 from '../assets/image5.jpg?url';
+import image6 from '../assets/image6.jpg?url';
+
 
 export const developerInfo: DeveloperInfo = {
   name: 'HariHaran E',
@@ -79,7 +81,7 @@ I have experience working with Python, SQL, ReactJS, Django and I am currently f
       duration: '2019 - 2021'
     },
     {
-      degree: 'SSC',
+      degree: 'SSLC',
       institution: 'V.R.P HIGHER SECONDARY SCHOOL, VILLUPURAM',
       duration: '2018 - 2019'
     }
@@ -129,22 +131,24 @@ export const projects: Project[] = [
   },
   {
     id: '3',
-    title: 'Netflix Clone',
-    slug: 'netflix-clone',
-    description: 'A web application that replicates Netflix UI to stream and browse movies.',
-    longDescription: 'A Netflix-inspired web application that allows users to browse and stream movies with a modern UI. It features dynamic content loading, responsive design, and smooth navigation. The project focuses on frontend performance and user experience similar to real streaming platforms.',
-    techStack: ['ReactJS','JavaScript', 'HTML', 'CSS'],
+    title: 'Medical plant identification using CNN',
+    slug: 'Medical-plant-identification',
+    description: 'AI-powered web application for identifying medicinal plants using CNN/MobileNetV2 and OpenCV, with image upload and live camera prediction.',
+    longDescription: 'An AI-powered web application that identifies medicinal plants using a trained Convolutional Neural Network (CNN) model based on MobileNetV2 architecture and OpenCV for image processing. Users can upload images or use their device camera for real-time plant identification. The application provides information about the identified plant, including its medicinal properties and uses.',
+    techStack: ['React.js', 'Django', 'Django REST Framework', 'Python', 'CNN/MobileNetV2', 'TensorFlow/Keras', 'OpenCV'],
     features: [
-      'Movie browsing with categories',
-      'Responsive UI similar to Netflix',
-      'Video streaming interface',
-      'Search functionality for movies',
-      'Dynamic data fetching using APIs'
+      'Medicinal Plant Identification using CNN/MobileNetV2',
+      ' Live Camera & Image Upload for plant prediction',
+      ' Prediction Confidence Score',
+      ' Scientific Name & Medicinal Uses',
+      'Downloadable PDF Prediction Report',
+      'AI-Powered Confidence-Based Prediction', 
+      'Responsive React-Based Interface',
     ],
-    category: 'web',
+    category: 'ai',
     coverImage: image3,
     //year: '',
-    sourceCode: 'https://github.com/Hariharanxdev/NETFLIX-Clone.git'
+    sourceCode: 'https://github.com/Hariharanxdev/Medicine-Plant-Identification-Using-CNN-and-OPEN-CV.git'
   },
   {
     id: '4',
@@ -170,6 +174,25 @@ export const projects: Project[] = [
   },
   {
     id: '5',
+    title: 'Netflix Clone',
+    slug: 'netflix-clone',
+    description: 'A web application that replicates Netflix UI to stream and browse movies.',
+    longDescription: 'A Netflix-inspired web application that allows users to browse and stream movies with a modern UI. It features dynamic content loading, responsive design, and smooth navigation. The project focuses on frontend performance and user experience similar to real streaming platforms.',
+    techStack: ['ReactJS','JavaScript', 'HTML', 'CSS'],
+    features: [
+      'Movie browsing with categories',
+      'Responsive UI similar to Netflix',
+      'Video streaming interface',
+      'Search functionality for movies',
+      'Dynamic data fetching using APIs'
+    ],
+    category: 'web',
+    coverImage: image5,
+    //year: '',
+    sourceCode: 'https://github.com/Hariharanxdev/NETFLIX-Clone.git'
+  },
+  {
+    id: '6',
     title: 'Course Registration System',
     slug: 'course-registration-system',
     description: 'A system for managing course registrations and enrollments',
@@ -183,7 +206,7 @@ export const projects: Project[] = [
       'Integrated database for efficient data handling'
     ],
     category: 'web',
-    coverImage: image5,
+    coverImage: image6,
     //year: '',
     sourceCode: 'https://github.com/Hariharanxdev/Course-Registration-System.git'
   }
